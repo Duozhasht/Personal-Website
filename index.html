@@ -1,98 +1,99 @@
-<!doctype html>
-<html>
-	<head>
-    	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tiago Oliveira</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-		
-	</head>
+<!DOCTYPE html>
 
-	<body>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
 
-		<! ----Menubar---->      
-		<div class="navbar navbar-fixed-top navbar-inverse">
-        	<div class="container">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      				<span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
 
-    			</button>
-                
-        		<a class="navbar-brand" href="#">Tiago Oliveira</a>
-                <div class="nav-collapse collapse navbar-responsive-collapse navbar-static-top">
-       				<ul class="nav nav-pills">
-            			<li class ="active"><a href="index.html">Home</a></li>
-            			<li><a href="about.html">About</a></li>
-            			<li><a href="portfolio.html">Portfolio</a></li>
-            			<li><a data-toggle="modal" href="#mailto">Contact</a></li>
-            		</ul>
-            	</div>
-        	</div>
-        </div>
+  <title>Duozhasht's Website</title>
   
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
   
-         <! -----Content----->
-         <div class="content">
-         	<div class="row"> 
-         	    <div class="col-lg-8" style="padding-right:0">
-			 		<div class="contents" style="margin-top:50px">
-						<div class="jumbotron">
-	            			<h2>Web Designer</h2>
-	  						<p>...</p>
-	  						<p><a class="btn btn-primary btn-large" href="about.html">Learn more</a></p>
-	  					</div>
-	  				</div>
-	  			</div>
-	  			<div class="col-lg-4" style="padding-right:0">
-	  				<div class="sidebar">
-	  					<a class="thumbnail">
-      						<img data-src="images/social/apple.png" alt="">
-	  					</a>
-	  				</div>
-	  			
-	  			</div>
-		 	</div>
-         </div>
- 
- 
- <! -----Footbar---->
- 
-		<div class="panel" align="center" style="margin-bottom:0px; background-color: #222222; font-size: 14px; font-weight: 500; line-height: 20px; color: #777777;">
-    	    	Developed by Tiago Oliveira
-        	<div class="panel-footer" align="center" style="font-size:12px;">
-            	All copy rights reserved &copy;
-            </div>
-        </div>
-        
-        
-<! ------Mail------->        
-		<div class="modal" id="mailto">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Modal title</h4>
-					</div>
-					<div class="modal-body">
-					  	...
-					</div>
-					<div class="modal-footer">
-						<a href="#" class="btn">Close</a>
-						<a href="#" class="btn btn-primary">Save changes</a>
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-        
-        
-        
-        <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-    	<script src="js/bootstrap.js"></script>
-    	
-	</body>
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <script src="js/modernizr.foundation.js"></script>
+  
+</head>
+<body>
+	<div class="row">
 	
+		
+			<div id="sidebar" class="small-2 columns">
+				<ul class="side-nav">
+					<li class="active"><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="portfolio.html">work</a></li>
+					<li class="divider"></li>
+					<li><a href="#" data-reveal-id="contact">contact</a></li>
+				</ul>
+			</div>
+		
+		
 
+			<div id="contents" class="large-10 columns">
+				
+				<div class="panel">
+					<h1>Hello World,</h1>
+					<p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap <strong> around type to <strong>make it bold!</strong>. You can also you <em> to <em>italicize your words</em>.</p>
+				</div>
+			</div>	
+			
+						
+			<div id="contact" class="reveal-modal">
+				<h2>Awesome. I have it.</h2>
+				<p class="lead">Your couch.  It is mine.</p>
+				<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+				<a class="close-reveal-modal">&#215;</a>
+			</div>
+	
+	</div>
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="js/app.js"></script>
 
+  
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.cookie.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script src="js/foundation/foundation.forms.js"></script>
+  <script src="js/foundation/foundation.joyride.js"></script>
+  <script src="js/foundation/foundation.magellan.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
+  <script src="js/foundation/foundation.section.js"></script>
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  
+</body>
 </html>
